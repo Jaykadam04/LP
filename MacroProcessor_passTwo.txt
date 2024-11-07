@@ -1,0 +1,27 @@
+MNT.txt
+
+MACRO1 0
+MACRO2 3
+
+MDT.txt
+
+0 MACRO1 #1,#2
+1 ADD #1,#2
+2 MEND
+3 MACRO2 #1
+4 SUB #1,5
+5 MEND
+
+output_pass1.txt
+
+MOV A,B
+MACRO1 X,Y
+MACRO2 Z
+ADD C,D
+
+output_pass2.txt
+
+MOV A,B
++ ADD X,Y
++ SUB Z,5
+ADD C,D

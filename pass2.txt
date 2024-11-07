@@ -1,0 +1,39 @@
+mot.txt (Mnemonic Table):
+
+ADD IS 01 1
+SUB IS 02 1
+MULT IS 03 1
+MOVER IS 04 1
+MOVEM IS 05 1
+COMP IS 06 1
+BC IS 07 1
+DIV IS 08 1
+READ IS 09 1
+PRINT IS 10 1
+symtable.txt (Symbol Table):
+
+
+1 A 100
+2 B 104
+3 C 108
+4 D 112
+littable.txt (Literal Table):
+
+
+1 ='5' 200
+2 ='10' 204
+3 ='15' 208
+input_ic.txt (Intermediate Code):
+
+(AD,01) (C,100)
+(IS,04) (R,1) (S,1)
+(IS,05) (R,2) (S,2)
+(IS,06) (R,3) (S,3)
+(IS,07) (R,1) (L,1)
+(IS,10) (C,104)
+Expected Output in final_output.txt
+04 1 100
+05 2 104
+06 3 108
+07 1 200
+10 104
